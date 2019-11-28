@@ -1,0 +1,379 @@
+/*------<------------------------Headear----------------------------------*/
+header{
+   
+    border-bottom: 1.5px solid rgb(125, 82, 26);
+    display: flex;
+    flex-direction: row;
+    font-size: 175%;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    width: 100%;
+    text-shadow: 7px 7px 7px red;
+}
+
+#menuheader1{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+#menuheader2{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header a:link{
+    color:white;
+    text-decoration: none;
+}
+
+header a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+header a:active
+{
+    color:white;
+    text-decoration: none;
+}
+
+header a:hover
+{
+	border-top: 5px solid red;
+	padding-top: 1%;
+    text-shadow:0px 0px 10px #ca9421, 0px 0px 10px #ca9421,0px 0px 10px #ca9421;
+    transition: all 0.5s ease-out;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width:100%;
+}
+
+nav input[type="submit"]
+{
+	background-color:transparent;
+	border:none;
+	outline:none;
+	font-size: 85%;
+	color: white;
+	text-shadow: 3px 3px 3px black;
+
+}
+
+nav input[type="submit"]:hover
+{
+	border-top: 3px solid white;
+	padding-top: 1%;
+    text-shadow:0px 0px 10px #ca9421, 0px 0px 10px #ca9421,0px 0px 10px #ca9421;
+	transition: all 
+}
+/*------<------------------------Index----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.bodyindex{
+	background-image: url(photo/backindex.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:0px;
+  	font-family:'Roboto';
+  	text-align:center;
+
+}
+
+
+#container {
+  color:white;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:fixed;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+  border-radius: 10px 10px ;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+
+/*------<------------------------Inscription----------------------------------*/
+
+.bodyinscription{
+	background-image: url(photo/backinscription.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#titreinscription{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	color: black;
+}
+
+.formulaireinscription{
+
+	width:450px;
+	padding:30px;
+	margin:40px auto;
+	background: rgba(77,109,142,.75);
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.formulaireinscription .info{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	padding: 30px;
+	background: rgba(255,255,255,.75);
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+
+.formulaireinscription label{
+	text-align: center;
+	display: block;
+	font: 17px 'Oswald', sans-serif;
+	color: #888;
+	margin-bottom: 15px;
+}
+
+.formulaireinscription input{
+	font-size: 20px;
+	color: red ;
+
+}
+
+/*------<------------------------Connexion----------------------------------*/
+.bodyconnexion{
+	background-image: url(photo/backconnexion.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#titreconnexion{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+#divconnexion{
+	margin-top: 5% ;
+	width: 100% ;
+	text-align: center;
+	color: white ;
+	font-family: 'Oswald', sans-serif ;
+	font-size: 20px ;
+}
+
+
+.formulaireconnexion{
+
+	width:450px;
+	padding:30px;
+	margin-top: 10% ;
+	margin-left: 35% ;
+	background: rgba(255,255,255,.75);
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.formulaireconnexion .infoconnexion{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	padding: 30px;
+	background: rgba(255,255,255,.75);
+	margin-bottom: 15px;
+}
+
+
+.formulaireconnexion label{
+	text-align: center;
+	display: block;
+	font: 17px 'Oswald', sans-serif;;
+	color: black;
+	margin-bottom: 15px;
+}
+
+.formulaireconnexion input{
+	font-size: 20px;
+	color: black ;
+	border-radius: 30% ;
+}
+
+/*------<------------------------Profil----------------------------------*/
+.bodyprofil{
+	background-image: url(photo/backprofil.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#titremvp{
+	text-align: center;
+	color: red ;
+	font: 30px 'Oswald', sans-serif;
+}
+.formulaireprofil{
+
+	width:450px;
+	padding:30px;
+	margin:40px auto;
+	background: rgba(0,0,0,.5);
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.formulaireprofil .infoprofil{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	padding: 30px;
+	background: rgba(255,255,255,.5);
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+
+.formulaireprofil label{
+	text-align: center;
+	display: block;
+	font: 17px 'Oswald', sans-serif;
+	color: red;
+	margin-bottom: 15px;
+}
+
+.formulaireprofil input{
+	font-size: 25px;
+	color: red ;
+	border-radius: 15% ;
+}
+
+
+
+/*------<------------------------Livre-Or----------------------------------*/
+.bodylivre{
+	background-image: url(photo/backlivre.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.titrelivreor{
+	text-align: center;
+	color: white ;
+	background: linear-gradient(90deg, red, blue, purple);
+}
+
+
+
+.post{	
+	margin:2% auto;
+	width: 40%;
+	background-color: rgb(255,255,255, 0.5);
+}
+
+#post2{
+	margin:2% auto;
+	text-align: center;
+	width: 40% ;
+	color: black ;
+	border-style: none solid solid solid;
+	border-color: white ;
+	border-width: 4px ;
+}
+
+
+/*------<------------------------Commentaire----------------------------------*/
+
+.bodycommentaire{
+	background-image: url(photo/backcommentaire.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#com{
+	
+	margin:40px auto;
+	font-family: 'Oswald', sans-serif ;
+	color: white ;
+	font-size: 25px ;
+	text-align: center;
+}
+
+.commentaire{
+	width:450px;
+	padding:30px;
+	margin:40px auto;
+}
+
+textarea {
+	resize: none ;
+}
+.formco input {
+	color: red ;
+	font-size: 20px ;
+	border-radius: 10px ;
+}
+
