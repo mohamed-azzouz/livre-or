@@ -18,35 +18,30 @@ $row = mysqli_fetch_array($result);
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body class="bodyprofil">
-	<header>
-		 <nav id="menuheader1">
+		<header>
+            
+             <nav id="menuheader1">
                 <div id="menuheader2">
-                       <?php
-                        if (isset($_SESSION['login'])) 
-                        {
-                            echo "  <span class='headerspace'><a href='index.php'>Index</a></span> 
+                    <?php
+                        if (isset($_SESSION['login'])):?>  
+                                    <span class='headerspace'><a href='index.php'>Index</a></span> 
                                     <span class='headerspace'><a href='livre-or.php'>Livre d'Or</a></span>
                                     <span class='headerspace'><a href='commentaire.php'>Commentaire</a></span>
                                     <span class='headerspace'><a href='profil.php'>Profil</a></span>
                                     <span class='headerspace'><form action ='index.php' method='post'><input type='submit' value='Deconnexion' name='deconnexion'></form></span>";
                    
-                            if(isset($_POST["deconnexion"]))
-                            {
+                            <?php if(isset($_POST["deconnexion"])):
                                 session_unset();
                                 session_destroy();
                                 header('location:index.php');
-                            }
-                        }
-                        else 
-                        {
-                            echo "  <span class='headerspace'><a href='index.php'>Index</a></span>
+                                endif; ?>
+                        <?php else: ?>
+                                    <span class='headerspace'><a href='index.php'>Index</a></span>
                                     <span class='headerspace'><a href='connexion.php'>Connexion</a></span>
                                     <span class='headerspace'><a href='inscription.php'>Inscription</a></span>
                                     <span class='headerspace'><a href='livre-or.php'>Livre d'Or</a></span>
-                                    <span class='headerspace'><a href='profil.php'>Profil</a></span>
                                     <span class='headerspace'><a href='commentaire.php'>Commentaire</a></span>";
-                        } 
-
+                        <?php endif; ?>
                      ?>
 
                     
@@ -54,9 +49,7 @@ $row = mysqli_fetch_array($result);
                     
                 </div>
             </nav>
-            
-           
-    </header>
+        </header>
 
 	<div class="formulaireprofil">
 		<h1 id="titremvp">Modifier votre profil </h1>
