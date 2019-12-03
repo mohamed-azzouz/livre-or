@@ -28,7 +28,7 @@ $row = mysqli_fetch_array($result);
                                     <span class='headerspace'><a href='livre-or.php'>Livre d'Or</a></span>
                                     <span class='headerspace'><a href='commentaire.php'>Commentaire</a></span>
                                     <span class='headerspace'><a href='profil.php'>Profil</a></span>
-                                    <span class='headerspace'><form action ='index.php' method='post'><input type='submit' value='Deconnexion' name='deconnexion'></form></span>";
+                                    <span class='headerspace'><form action ='index.php' method='post'><input type='submit' value='Deconnexion' name='deconnexion'></form></span>
                    
                             <?php if(isset($_POST["deconnexion"])):
                                 session_unset();
@@ -41,7 +41,7 @@ $row = mysqli_fetch_array($result);
                                     <span class='headerspace'><a href='inscription.php'>Inscription</a></span>
                                     <span class='headerspace'><a href='livre-or.php'>Livre d'Or</a></span>
                                     <span class='headerspace'><a href='commentaire.php'>Commentaire</a></span>";
-                        <?php endif; ?>
+                        <?php endif; 
                      ?>
 
                     
