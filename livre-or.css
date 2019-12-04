@@ -201,6 +201,18 @@ p {
 
 }
 
+#false2{
+	font-family: 'Oswald', sans-serif;
+	background: rgba(0,0,0,.75);
+	margin:40px auto;
+	text-align: center;
+	color: red ;
+	font-size: 30px;
+	width: 20%;
+	border-radius: 10px;
+}
+
+
 /*------<------------------------Connexion----------------------------------*/
 .bodyconnexion{
 	background-image: url(photo/backconnexion.jpg);
