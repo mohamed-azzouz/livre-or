@@ -53,6 +53,12 @@
 					<br>
 					<br>
 
+					<label for="confirmpassword">Confirmer Mot de passe :<br></label>
+					<input type="password" name="confirmpassword" id="confirmpassword" required>
+
+					<br>
+					<br>
+
 					<input type="submit" value="Inscription" name="confirm" /><br>
 				</div>
 
@@ -94,8 +100,12 @@
 			$resultat3 = mysqli_fetch_all($query3);             
 			if (!empty($resultat3))             
 			{                 
-				echo "Ce Login est déjà pris"; 
-			}                   
+				echo "<div id='false2'>Ce Login est déjà pris"; 
+			}
+			elseif($_POST["password"] != $_POST["confirmpassword"])            
+			{                
+				echo "<div id='false2'>Les mots de passe ne correspondent pas </div>";
+			}                         
 			else            
 		 	{                
 				$requete = "INSERT INTO utilisateurs (login, password) VALUES ('$login', '$password')";
