@@ -100,7 +100,7 @@
 			$resultat3 = mysqli_fetch_all($query3);             
 			if (!empty($resultat3))             
 			{                 
-				echo "<div id='false2'>Ce Login est déjà pris"; 
+				echo "<div id='false2'>Ce Login est déjà pris";
 			}
 			elseif($_POST["password"] != $_POST["confirmpassword"])            
 			{                
